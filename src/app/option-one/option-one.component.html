@@ -1,0 +1,32 @@
+<ng-container *ngIf="(isDataReady|async)">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">order</th>
+        <th scope="col">level</th>
+        <th scope="col">code</th>
+        <th scope="col">parent</th>
+        <th scope="col">description</th>
+        <th scope="col">item_description</th>
+        <th scope="col">item_extra</th>
+        <th scope="col">rulings</th>
+        <th scope="col">item_exclude</th>
+        <th scope="col">isic_reference</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td scope="row">{{item.order}}</td>
+        <td>{{item.level}}</td>
+        <td>{{item.code}}</td>
+        <td>{{item.parent}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.item_description}}</td>
+        <td>{{item.item_extra}}</td>
+        <td>{{item.rulings}}</td>
+        <td>{{item.item_exclude}}</td>
+        <td>{{item.isic_reference}}</td>
+      </tr>
+    </tbody>
+  </table>
+</ng-container>

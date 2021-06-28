@@ -1,0 +1,10 @@
+{
+  "/gft/*": {
+      "target": "http://localhost:8080/gft",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite":{
+          "^/gft": ""
+      }
+  }
+}
